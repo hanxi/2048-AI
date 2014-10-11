@@ -1,11 +1,41 @@
 .controls {
-  margin-top: 1em;
-  padding: 0.5em;
   overflow: auto;
 }
 
-.ai-button, #feedback-container {
-  font-size: xx-large;
+#feedback-container {
+  font-size: 20px;
+  display: inline-block;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.ai-button {
+  font-size: 20px;
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+  border-top-width: 1px; 
+  border-right-width: 1px; 
+  border-bottom-width: 1px; 
+  border-left-width: 1px; 
+  border-top-style: solid; 
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+  border-left-style: solid; 
 }
 
 #run-button-container {
@@ -17,6 +47,5 @@
 }
 
 #feedback-container {
-  margin-left: 1em;
   font-weight: bold;
 }

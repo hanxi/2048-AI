@@ -68,6 +68,8 @@ KeyboardInputManager.prototype.listen = function () {
     self.emit('run')
   })
 
+  var restartButton = document.getElementById('restart-button');
+  restartButton.addEventListener('click', this.restart.bind(this));
 
   // Listen to swipe events
   var gestures = [Hammer.DIRECTION_UP, Hammer.DIRECTION_RIGHT,

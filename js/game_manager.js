@@ -17,11 +17,11 @@ function GameManager(size, InputManager, Actuator) {
   this.inputManager.on('run', function() {
     if (this.running) {
       this.running = false;
-      this.actuator.setRunButton('Auto-run');
+      this.actuator.setRunButton('自动');
     } else {
       this.running = true;
       this.run()
-      this.actuator.setRunButton('Stop');
+      this.actuator.setRunButton('暂停');
     }
   }.bind(this));
 
@@ -32,7 +32,7 @@ function GameManager(size, InputManager, Actuator) {
 GameManager.prototype.restart = function () {
   this.actuator.restart();
   this.running = false;
-  this.actuator.setRunButton('Auto-run');
+  this.actuator.setRunButton('自动');
   this.setup();
 };
 

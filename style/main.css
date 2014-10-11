@@ -1,4 +1,3 @@
-@import url(fonts/clear-sans.css);
 html, body {
   margin: 0;
   padding: 0;
@@ -16,13 +15,18 @@ body {
   clear: both; }
 
 h1.title {
-  font-size: 80px;
+  font-size: 50px;
   font-weight: bold;
   margin: 0;
   display: block;
   float: left; }
 
-@-webkit-keyframes move-up {
+.footer {
+  position:absolute;
+  text-align: center;
+  margin-top: 10px;
+
+}@-webkit-keyframes move-up {
   0% {
     top: 25px;
     opacity: 1; }
@@ -53,10 +57,10 @@ h1.title {
   position: relative;
   float: right;
   background: #bbada0;
-  padding: 15px 25px;
-  font-size: 25px;
-  height: 25px;
-  line-height: 47px;
+  padding: 10px 25px;
+  font-size: 20px;
+  height: 10px;
+  line-height: 10px;
   font-weight: bold;
   border-radius: 3px;
   color: white;
@@ -66,7 +70,7 @@ h1.title {
     width: 100%;
     top: 10px;
     left: 0;
-    content: "Score";
+    content: "";
     text-transform: uppercase;
     font-size: 13px;
     line-height: 13px;
@@ -443,6 +447,53 @@ hr {
 .game-intro {
   margin-bottom: 0; }
 
+.restart-button {
+  font-size: 20px;
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 25px;
+  line-height:25px;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+  border-top-width: 1px; 
+  border-right-width: 1px; 
+  border-bottom-width: 1px; 
+  border-left-width: 1px; 
+  border-top-style: solid; 
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+  border-left-style: solid;
+  float: right; }
+
+.btn-primary {
+  display: inline-block;
+  background: #8f7a66;
+  border-radius: 3px;
+  padding: 0 10px;
+  text-decoration: none;
+  color: #f9f6f2;
+  height: 35px;
+  line-height: 25px;
+  display: block;
+  text-align: center;
+  margin-right: 10px;
+  border-top-width: 1px; 
+  border-right-width: 1px; 
+  border-bottom-width: 1px; 
+  border-left-width: 1px; 
+  border-top-style: solid; 
+  border-right-style: solid; 
+  border-bottom-style: solid; 
+  border-left-style: solid; 
+  font-size:20px;
+  float: left; }
+
+
 .game-explanation {
   margin-top: 50px; }
 
@@ -462,7 +513,7 @@ hr {
     padding: 0 20px; }
 
   h1.title {
-    font-size: 50px; }
+    font-size: 25px; }
 
   .container {
     width: 280px;
@@ -475,7 +526,7 @@ hr {
     margin-bottom: 10px; }
 
   .game-container {
-    margin-top: 40px;
+    margin-top: 5px;
     position: relative;
     padding: 10px;
     cursor: default;
@@ -629,7 +680,7 @@ hr {
       top: 203px; }
 
   .game-container {
-    margin-top: 20px; }
+    margin-top: 5px; }
 
   .tile {
     font-size: 35px; }
